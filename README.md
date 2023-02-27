@@ -7,8 +7,8 @@ A e-commerce domain that:
  ## How it works
  For our purposes, a Product has many Users, a User has many Products’ s, and a Review belongs to a User and to a Product.
  ## Relationships
- <img scr="./image/image.jpeg"/> 
  Product - User is a many-to-many relationship.
+        <img scr="./image/image.jpeg"/>
  ## Topics Covered
  - Active Record Migrations
  - Active Record Associations
@@ -16,6 +16,7 @@ A e-commerce domain that:
  - Active Record QueryingProject Setup
 
 Documentation on the Ruby language can be found here: [Ruby Docs](https://docs.ruby-lang.org/en/3.1/)
+ 
 
 # Tools Used
 This project was built with the following tools:
