@@ -40,19 +40,18 @@ To use this repo on your machine requires some simple steps:
 - Open a terminal / command line interface on your computer
 - Clone the repo by using the following:
 
-        git clone git@github.com:FranklinKipchumba/Phase-3-WK2-Code-Challenge-1.git
+        git clone git@github.com:FranklinKipchumba/Phase-3-WK3-Code-Challenge-2.git
 
 - Be patient as it creates a copy on your local machine for you.
 - Change directory to the repo folder:
 
-        cd Phase-3-WK2-Code-Challenge-1
+        cd Phase-3-WK3-Code-Challenge-2
 
 - (Optional) Open it in ``Visual Studio Code``
 
         code .
 
 - (Alternate Option) Open it in any editor of your choice.
-- Hurray! You are one step closer to being as intelligent as Einstein.
 
 # Running the application
 
@@ -64,7 +63,7 @@ Running the application is very straight forward. You can use the following step
 
 - Run the application on the terminal
 
-      ruby `file_name.rb`
+      rake db:seed
 
 # Authors
 This project was contributed to by:
