@@ -8,8 +8,7 @@ A e-commerce domain that:
  For our purposes, a Product has many Users, a User has many Products’ s, and a Review belongs to a User and to a Product.
  ## Relationships
  Product - User is a many-to-many relationship:
-   ![image](https://user-images.githubusercontent.com/114776859/221562530-7f044e1b-2ae6-4e3f-afef-158946d486c6.png)
-
+![image-removebg-preview](https://user-images.githubusercontent.com/114776859/221562846-1872c38d-6629-4ea1-bf23-938784674752.png)
 
  ## Topics Covered
  - Active Record Migrations
