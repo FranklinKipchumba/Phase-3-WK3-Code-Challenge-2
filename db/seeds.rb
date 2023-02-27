@@ -1,9 +1,9 @@
-user1 = User.create(name: "John")
-user2 = User.create(name: "Mary")
+user1 = User.create(user_name: "John")
+user2 = User.create(user_name: "Mary")
 
-product1 = Product.create(name: "Hisense")
-product2 = Product.create(name: "Ps5")
+product1 = Product.create(product_name: "Hisense")
+product2 = Product.create(product_name: "Ps5")
 
-Review.create(user: user1, product: product1, star_rating: 4, comment: "Nice product")
-Review.create(user: user2, product: product1, star_rating: 5, comment: "Great product")
-Review.create(user: user1, product: product2, star_rating: 3, comment: "OK product")
+Review.create(user_id: user1.id, product_id: product1.id, star_rating: 4, comment: "Nice product")
+Review.create(user_id: user2.id, product_id: product1.id, star_rating: 5, comment: "Great product")
+Review.create(user_id: user1.id, product_id: product2.id, star_rating: 3, comment: "OK product")
