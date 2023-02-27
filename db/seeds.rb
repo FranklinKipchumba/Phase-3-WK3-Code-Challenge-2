@@ -1,22 +1,9 @@
-Products.create(name: "Hisense", Stock: "14 items")
-Products.create(name: "Ps4", Stock: "23 items")
+user1 = User.create(name: "John")
+user2 = User.create(name: "Mary")
 
-20.times do 
-    User.create do |user|
-     user.user_name = Faker::Name.user_name
-     user.product_name = Faker::Name.product_name
-     user.descriptions = Faker::Descriptions.description
-     user.star_ratting = Faker::Ratting.star_ratting
-     user.comment = Fake::Reviews.comments
-    end
-end
+product1 = Product.create(name: "Hisense")
+product2 = Product.create(name: "Ps5")
 
-100.times do 
-    Reviews.create do |reviews|
-        reviews.product_name = Fake::Name.product_name
-        reviews.user_name = Fake::Name.user_name
-        reviews.star_ratting = Fake::Ratting.star_ratting
-        reviews.comment = Fake::Reviews.comment
-    end
-end
-
+Review1 = Review.create(user: user1, product: product1, star_rating: 4, comment: "Nice product")
+Review2 = Review.create(user: user2, product: product1, star_rating: 5, comment: "Great product")
+Review3 = Review.create(user: user1, product: product2, star_rating: 3, comment: "OK product")

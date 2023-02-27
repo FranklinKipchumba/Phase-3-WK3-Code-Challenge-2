@@ -1,25 +1,16 @@
-require "pry"
-require "active_record"
+class Product < ApplicationRecord
+  has_many :reviews
+  has_many :users, through: :reviews
 
-ActiveRecord:Base.establish_connection(
-  adapter: "sqlite3",
-  database: "db/products.sqlite3"
-)
+  def leave_review(user, star_rating, comment)
+    Review.create(user: user, product: self, star_rating: star_rating, comment: comment)
+  end
 
-# TODO: CREATE TABLE
-create_tm_table = <<-SQL
-  CREATE TABLE IF NOT EXISTS products(
-      id INTEGER PRIMARY KEY,
-      Pname TEXT,
-      Pcategory TEXT,
-      Username TEXT,
-      Stock INTEGER,
-      UNIQUE(Username, Pname)
-  )
-  SQL
-  ActiveRecord::Base.connection.execute(create_tm_table)
+  def print_all_reviews
+    reviews.each { |review| review.print_review }
+  end
 
-class Products < ActiveRecord::Base
-  belongs_to :users
-  has_many :users, :reviews, dependent: :destroy
+  def average_rating
+    reviews.average_rating
+  end
 end
