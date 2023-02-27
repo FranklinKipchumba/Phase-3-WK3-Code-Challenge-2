@@ -7,9 +7,9 @@ A e-commerce domain that:
  ## How it works
  For our purposes, a Product has many Users, a User has many Products’ s, and a Review belongs to a User and to a Product.
  ## Relationships
- Product - User is a many-to-many relationship.
+ Product - User is a many-to-many relationship:
        
-<img scr="ERD.png" width="200">    
+<img scr="image.png" width="500" height="200">    
 
  ## Topics Covered
  - Active Record Migrations
